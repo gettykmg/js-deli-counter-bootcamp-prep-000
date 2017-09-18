@@ -17,3 +17,21 @@ function nowServing(katzDeliLine) {
     return "There is no one waiting to be served!"
   }
 }
+
+function currentLine(katzDeliLine) {
+  var outcome = "The line is currently: "
+  if(katzDeliLine.length === 0) {
+    return "The line is currently empty."
+  } else {
+    for (var i = 0; < katzDeliLine.length; i++){
+      var lineNum = i + 1;
+      if (i === (katzDeliLine.length - 1)) {
+        var line2 = `${lineNum}. ${katzDeliLine[i]}`
+        outcome = outcome.concat(line2)
+    }
+    else {var line = `${lineNum}. ${katzDeliLine[i]},`
+    outcome = outcome.concat(line)}
+  }
+}
+return outcome;
+}
