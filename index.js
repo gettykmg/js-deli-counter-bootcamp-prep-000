@@ -23,7 +23,7 @@ function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
     return "The line is currently empty."
   } else {
-    for (var i = 0; < katzDeliLine.length; i++){
+    for (var i = 0; i < katzDeliLine.length; i++){
       var lineNum = i + 1;
       if (i === (katzDeliLine.length - 1)) {
         var line2 = `${lineNum}. ${katzDeliLine[i]}`
